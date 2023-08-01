@@ -36,6 +36,7 @@
   <project path="system/core" name="system_core" remote="astera-ssh" />
   <project path="system/media" name="system_media" remote="astera-ssh" />
   <project path="vendor/aosp" name="vendor_aosp" remote="astera-ssh" /> 
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-ssh" />
   <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-ssh" />
 
