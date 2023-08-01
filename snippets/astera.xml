@@ -9,6 +9,10 @@
           fetch="https://github.com/Project-Astera"
           revision="thundra" />
 
+  <remote name="astera-devices"
+          fetch="https://github.com/Project-Astera-Devices"
+          revision="thundra" />
+
   <!-- Custom repos -->
   <project path="art" name="art" remote="astera-ssh" />
   <project path="bionic" name="bionic" remote="astera-ssh" />
@@ -32,6 +36,7 @@
   <project path="system/core" name="system_core" remote="astera-ssh" />
   <project path="system/media" name="system_media" remote="astera-ssh" />
   <project path="vendor/aosp" name="vendor_aosp" remote="astera-ssh" /> 
+  <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-ssh" />
 
   <!-- Custom framework repos -->
