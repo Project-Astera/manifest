@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="astera-ssh"
-          fetch="ssh://git@git.erensprojects.me"
+          fetch="ssh://git@git.erensprojects.me/EreN"
           revision="thundra" />
 
   <remote name="astera-gh"
