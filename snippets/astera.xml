@@ -35,6 +35,7 @@
   <project path="manifest" name="manifest" remote="astera-gh" />
   <project path="system/core" name="system_core" remote="astera-ssh" />
   <project path="system/media" name="system_media" remote="astera-ssh" />
+  <project path="system/update_engine" name="system_update_engine" remote="astera-ssh" />
   <project path="vendor/aosp" name="vendor_aosp" remote="astera-ssh" /> 
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-ssh" />
   <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
