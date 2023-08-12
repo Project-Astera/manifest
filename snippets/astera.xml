@@ -14,9 +14,9 @@
           revision="thundra" />
 
   <!-- Custom repos -->
-  <project path="art" name="art" remote="astera-ssh" />
-  <project path="bionic" name="bionic" remote="astera-ssh" />
-  <project path="build/make" name="build_make" remote="astera-ssh">
+  <project path="art" name="art" remote="astera-gh" />
+  <project path="bionic" name="bionic" remote="astera-gh" />
+  <project path="build/make" name="build_make" remote="astera-gh">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -25,34 +25,34 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="astera-ssh" >
+  <project path="build/soong" name="build_soong" remote="astera-gh" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="bootable/recovery" name="bootable_recovery" remote="astera-ssh" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="astera-ssh" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="astera-ssh" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="astera-gh" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="astera-gh" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="astera-gh" />
   <project path="manifest" name="manifest" remote="astera-gh" />
-  <project path="system/core" name="system_core" remote="astera-ssh" />
-  <project path="system/media" name="system_media" remote="astera-ssh" />
-  <project path="system/update_engine" name="system_update_engine" remote="astera-ssh" />
-  <project path="tools/platform-compat" name="tools_platform-compat" remote="astera-ssh" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="astera-ssh" /> 
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-ssh" />
+  <project path="system/core" name="system_core" remote="astera-gh" />
+  <project path="system/media" name="system_media" remote="astera-gh" />
+  <project path="system/update_engine" name="system_update_engine" remote="astera-gh" />
+  <project path="tools/platform-compat" name="tools_platform-compat" remote="astera-gh" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="astera-gh" /> 
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-gh" />
   <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-ssh" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-gh" />
 
   <!-- Custom framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="astera-ssh" />
-  <project path="frameworks/base" name="frameworks_base" remote="astera-ssh" />
-  <project path="frameworks/native" name="frameworks_native" remote="astera-ssh" />
+  <project path="frameworks/av" name="frameworks_av" remote="astera-gh" />
+  <project path="frameworks/base" name="frameworks_base" remote="astera-gh" />
+  <project path="frameworks/native" name="frameworks_native" remote="astera-gh" />
 
   <!-- Custom packages repos -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="astera-ssh" />
-  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="astera-ssh" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="astera-ssh" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="astera-ssh" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="astera-ssh" />
-  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="astera-ssh" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="astera-ssh" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="astera-gh" />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="astera-gh" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="astera-gh" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="astera-gh" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="astera-gh" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="astera-gh" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="astera-gh" />
 </manifest>
