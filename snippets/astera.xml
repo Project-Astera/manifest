@@ -30,6 +30,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="bootable/recovery" name="bootable_recovery" remote="astera-gh" />
+  <project path="external/piex" name="external_piex" remote="astera-gh" />
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="astera-gh" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="astera-gh" />
   <project path="manifest" name="manifest" remote="astera-gh" />
