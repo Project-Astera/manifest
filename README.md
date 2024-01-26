@@ -1,11 +1,20 @@
-# Pixel Experience #
+# Project Astera #
 
 ### Sync ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/PixelExperience/manifest -b thirteen-plus
+repo init -u https://github.com/Project-Astera/manifest -b thurisu
+```
+
+```bash
+
+# Initialize local repository with this if you want to save some space
+repo init -u https://github.com/Project-Astera/manifest -b thurisu --depth=1
+```
+
+```bash
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -17,16 +26,16 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 # Set up environment
 $ . build/envsetup.sh
-
-# Choose a target
-$ lunch aosp_$device-userdebug
-
-# Build the code
-$ mka bacon -jX
 ```
 
-### Submitting Patches ###
+```bash
 
-Patches are always welcome! Please submit your patches to our Gerrit.
+# Choose a target
+$ lunch aosp_devicecodename-userdebug
+```
 
-[Gerrit push guide](https://wiki.pixelexperience.org/help/submit-patch/)
+```bash
+
+# Build the code
+$ mka bacon -j$(nproc --all)
+```
