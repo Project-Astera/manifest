@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="astera-gh"
+          fetch="https://github.com/Project-Astera"
+          revision="thurisu" />
+
+  <remote name="astera-devices"
+          fetch="https://github.com/Project-Astera-Devices"
+          revision="thurisu" />
+
+  <!-- Custom repos -->
+  <project path="art" name="art" remote="astera-gh" />
+  <project path="bionic" name="bionic" remote="astera-gh" />
+  <project path="build/make" name="build_make" remote="astera-gh">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="astera-gh" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bootable/recovery" name="bootable_recovery" remote="astera-gh" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="astera-gh" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="astera-gh" />
+  <project path="manifest" name="manifest" remote="astera-gh" />
+  <project path="system/core" name="system_core" remote="astera-gh" />
+  <project path="system/media" name="system_media" remote="astera-gh" />
+  <project path="system/update_engine" name="system_update_engine" remote="astera-gh" />
+  <project path="tools/platform-compat" name="tools_platform-compat" remote="astera-gh" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="astera-gh" /> 
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-gh" />
+  <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-gh" />
+
+  <!-- Custom framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="astera-gh" />
+  <project path="frameworks/base" name="frameworks_base" remote="astera-gh" />
+  <project path="frameworks/native" name="frameworks_native" remote="astera-gh" />
+
+  <!-- Custom packages repos -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="astera-gh" />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="astera-gh" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="astera-gh" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="astera-gh" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="astera-gh" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="astera-gh" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="astera-gh" />
+</manifest>
