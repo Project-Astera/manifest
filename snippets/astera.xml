@@ -3,6 +3,10 @@
   <remote name="astera-gh"
           fetch="https://github.com/Project-Astera"
           revision="thurisu" />
+  
+  <remote name="astera-self"
+          fetch="https://git.erensprojects.me/MrErenK"
+          revision="thirteen" />
 
   <remote name="astera-devices"
           fetch="https://github.com/Project-Astera-Devices"
@@ -36,6 +40,7 @@
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="astera-gh" />
   <project path="vendor/officialdevices" name="official_devices" remote="astera-devices" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="astera-gh" />
+  <project path="vendor/gms" name="vendor_gms" remote="astera-self" clone-depth="1" />
 
   <!-- Custom framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="astera-gh" />
